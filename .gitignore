@@ -1,0 +1,9 @@
+*~
+.*.swp
+.*.swo
+*.root
+*.png
+*.o
+*.so
+tmp
+*.pbs

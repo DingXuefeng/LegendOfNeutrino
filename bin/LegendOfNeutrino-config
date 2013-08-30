@@ -1,0 +1,96 @@
+#!/bin/sh
+#
+# config script for LegendOfNeutrino lib
+#
+# By Ding Xuefeng dingxf@ihep.ac.cn
+# 2013.08.27 ver 0.1
+
+libdir=/workfs/dyw/dingxf/LegendOfNeutrino/lib
+includedir=/workfs/dyw/dingxf/LegendOfNeutrino/include
+
+
+cflags="-I${includedir}"
+
+libs="-lTestTool \
+      -lOptionFileManager \
+      -lDybStyle \
+      -lTTreeAnalyzer"
+
+#-----------------------------------------------------------------------------
+# help function
+#
+help()
+{
+    cat<<EOF
+Usage: geant4-config [OPTION...]
+  --libs                  output all linker flags
+  --cflags                output all preprocessor
+                          and compiler flags
+Help options
+  -?, --help              show this help message
+  --usage                 display brief usage message
+EOF
+
+    exit 1
+}
+
+
+#------------------------------------------------------------------------------
+# usage function
+#
+usage()
+{
+    cat<<EOF
+Usage: geant4-config [--libs] [--cflags]
+EOF
+    exit 1
+}
+
+#------------------------------------------------------------------------------
+# Process arguments
+#
+if test $# -eq 0 ; then
+    usage
+fi
+
+while test $# -gt 0 ; do
+    case "$1" in
+        -*=*)
+            optarg=`echo "$1" | sed 's/[-_a-zA-Z0-9]*=//'`
+            ;;
+        *)
+            optarg=
+            ;;
+    esac
+
+    case "$1" in
+        --libs)
+            echo "-L${libdir}" ${libs}
+            ;;
+
+        --cflags)
+            echo ${cflags}
+            ;;
+
+        -?)
+            help
+            ;;
+
+        --help)
+            help
+            ;;
+
+        --usage)
+            usage
+            ;;
+
+        *)
+            usage
+            ;;
+    esac
+
+    shift
+done
+
+# Finally...
+exit 0
