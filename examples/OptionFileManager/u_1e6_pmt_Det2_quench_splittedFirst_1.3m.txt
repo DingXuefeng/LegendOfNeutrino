@@ -1,0 +1,34 @@
+# Option file for plot
+# 
+# example file:
+#JobName u_1e6_pmt_Det2_quench_splittedFirst_1.3m
+#InputFileDirectory /publicfs/dyb/data/userdata/dingxf/JUNO/PMTradioactivity/Det2/u_1e6_pmt_Det2_quench_splittedFirst_1.3m
+#InputFileNamePrefix u_100000_
+#FileNumbers 10
+#
+
+# job name
+JobName u_1e6_pmt_Det2_quench_splittedFirst_1.3m
+# inputfile dir
+InputFileDirectory /publicfs/dyb/data/userdata/dingxf/JUNO/PMTradioactivity/Det2/u_1e6_pmt_Det2_quench_splittedFirst_1.3m
+# file name prefix
+InputFileNamePrefix u_100000_
+# file numbers
+FileNumbers 10
+# TTree name
+TTreeName evt
+# scale factor
+# From entris (event number) to eventRate/decayRate
+# factor = 1./(1e6/14.)
+ScaleFactor 1./(1e6/14.)
+
+Name_num 4
+Name A mm
+Name B
+Name C
+Name D
+# the last Name will be ignored
+Name E
+SName J
+SName K
+# not enough SName, manager will complain

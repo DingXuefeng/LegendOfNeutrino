@@ -28,5 +28,4 @@ class TimeWatcher
   private:
     static clock_t watch;
 };
-clock_t TimeWatcher::watch = 0L;
 #endif

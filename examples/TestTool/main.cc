@@ -17,6 +17,8 @@ int main()
 
   TH1* testHistogram = TestTool::getTestTH1();
   TestTool::testTH1(std::cout,testHistogram,1);
+  TestTool::watchTH1(std::cout,testHistogram,2.3);
+  std::cout<<TestTool::watchTH1(testHistogram,2.3)<<std::endl;
   TestTool::testTH2(std::cout,TestTool::getTestTH2());
   return 0;
 }

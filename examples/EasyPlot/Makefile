@@ -4,7 +4,7 @@
 #   2013.08.04 ver 1.0
 #   2013.08.24 ver 1.1
 
-TARGET:= TimeWatcher
+TARGET:= EasyPlot
 
 HEAD := ./include
 HEADFILES := $(wildcard ${HEAD}/*.h)

@@ -1,0 +1,23 @@
+DrawType HistogramsMapType
+InputList_num 6
+InputList ACUscanDataTime_2011_08_22AD1.root DataTime_2011_08_22AD1_A_Center 1 1 20 EH1AD1 11.08 ACUA
+InputList ACUscanDataTime_2011_08_22AD1.root DataTime_2011_08_22AD1_B_GdlsEdge 1 1 22 EH1AD1 11.08 ACUB
+InputList ACUscanDataTime_2011_08_22AD1.root DataTime_2011_08_22AD1_C_GammaCatcher 1 1 24 EH1AD1 11.08 ACUC
+InputList ACUscanDataTime_2011_08_22AD2.root DataTime_2011_08_22AD2_A_Center 2 1 20 EH1AD2 11.08 ACUA
+InputList ACUscanDataTime_2011_08_22AD2.root DataTime_2011_08_22AD2_B_GdlsEdge 2 1 22 EH1AD2 11.08 ACUB
+InputList ACUscanDataTime_2011_08_22AD2.root DataTime_2011_08_22AD2_C_GammaCatcher 2 1 24 EH1AD2 11.08 ACUC
+Xtitle radius [m]
+Ytitle #frac{event rate [Hz]}{decay rate [Bq]}
+LegendLBx 0.73
+LegendLBy 0.08
+LegendRTx 1.0
+LegendRTy 0.99
+LeftMargin 0.12
+RightMargin 0.275
+TopMargin 0.05
+BottomMargin 0.12
+PNGname test.png
+ScaleBinx 0
+RangeLow 1.9
+RangeUp 2.94
+

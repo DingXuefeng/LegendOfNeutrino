@@ -13,7 +13,13 @@ cflags="-I${includedir}"
 
 libs="-lTestTool \
       -lOptionFileManager \
+      -lTimeWatcher \
       -lDybStyle \
+      -lPointWithYError \
+      -lConverter \
+      -lEasyPlot \
+      -lXYcurve \
+      -lEnergySpectrum \
       -lTTreeAnalyzer"
 
 #-----------------------------------------------------------------------------
